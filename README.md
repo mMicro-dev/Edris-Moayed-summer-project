@@ -59,8 +59,7 @@ Teacher: Dr. Arezo Sabri
 9. no footer
 
 ---
-
-## Navigation Fetures
+# Navigation Fetures
 1. Sticky Navigation bar
 2. Brand zoom on hover
 3. Dropdown search bar
