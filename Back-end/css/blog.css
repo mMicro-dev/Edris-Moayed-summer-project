@@ -1,0 +1,46 @@
+/* main */
+
+.first-view {
+    margin-top: 10rem;
+}
+
+.placeholder-box {
+    background-color: #00008B;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: var(--primary-50) !important;
+}
+
+.card-custom {
+    transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+}
+
+.card-custom:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.page-link {
+    color: var(--primary) !important;
+}
+
+.active>.page-link,
+.page-link.active {
+    color: var(--secondary) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
