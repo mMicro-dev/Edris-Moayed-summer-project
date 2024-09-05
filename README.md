@@ -1,7 +1,7 @@
 # Edris-Moayed-summer-project
 Teacher: Dr. Arezo Sabri
 
-# Home Page
+## Home Page
 1. Designe UI/UX (by designer)
 2. Navigation
 3. Starting banner (home)
@@ -11,7 +11,7 @@ Teacher: Dr. Arezo Sabri
 7. Recent blogs (home)
 8. Footer
 
-# Blog Menu Page
+## Blog Menu Page
 1. Designe UI/UX (by designer)
 2. Navigation
 3. Specified Blog (in the first view)
@@ -19,7 +19,7 @@ Teacher: Dr. Arezo Sabri
 5. Blogs (Forth onwards)
 6. Footer
 
-# Blog Page
+## Blog Page
 1. Designe UI/UX (by designer)
 2. Navigation
 3. Title
@@ -29,10 +29,10 @@ Teacher: Dr. Arezo Sabri
 7. Similar content (blogs with the same tag or tags)
 8. Footer
 
-# About Us Page
+## About Us Page
 1. Not yet any designe for this page
 
-# Contact Us Page
+## Contact Us Page
 1. Designe UI/UX (by designer)
 2. Navigation
 3. The first view (3 cards for the most popular ways to contact us){Gmail, Telegram, Whatsapp}
@@ -40,14 +40,14 @@ Teacher: Dr. Arezo Sabri
 5. Other social and ways to contact (Instagram, X, Facebook, linkedIn, Notion)
 6. Footer (All rights reserved and Terms)
 
-# Login Page
+## Login Page
 1. Designe UI/UX (by designer)
 2. Navigation
 3. Login form (a form with 2 inputs for login, Remember me check, #forget-password)
 4. Forget password(its made with modal)
 5. no footer
 
-# Dashbord
+## Dashbord
 1. Designe UI/UX (by designer)
 2. Navigation
 3. Profile section (its almost done)
@@ -58,7 +58,6 @@ Teacher: Dr. Arezo Sabri
 8. Log out (IDK)
 9. no footer
 
----
 # Navigation Fetures
 1. Sticky Navigation bar
 2. Brand zoom on hover
