@@ -84,13 +84,13 @@
 					</li>
 					<!-- login -->
 					<li class="nav-item">
-						<a class="login btn bg-color-primary secondary-color rounded-5 d-none" id="login"
+						<a class="login btn bg-color-primary secondary-color rounded-5" id="login"
 							href="login.html">Login</a>
 					</li>
+
 					<!-- profile -->
 					<li class="user-dropdown">
-						<div class="dropdown-center">
-							<div class="d-flex align-items-center">
+						<div class="dropdown">
 								<button id="UserDropdown" class="btn" type="button" data-bs-toggle="dropdown"
 									data-bs-auto-close="true" aria-expanded="false">
 									<svg class="me-2" width="3" height="27" viewBox="0 0 3 27" fill="none"
@@ -106,8 +106,6 @@
 											stroke-linejoin="round" />
 									</svg>
 								</button>
-							</div>
-
 							<ul class="dropdown-menu profile-dropdown p-3 dropdown-menu-end"
 								aria-labelledby="UserDropdown">
 								<li>
@@ -117,20 +115,6 @@
 											matin94
 										</p>
 									</a>
-								</li>
-
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-
-								<li>
-									<a class="primary-color dropdown-item" href="dashboard.html">Orders</a>
-								</li>
-								<li>
-									<a class="primary-color dropdown-item" href="dashboard.html">Tickets</a>
-								</li>
-								<li>
-									<a class="primary-color dropdown-item" href="dashboard.html">Acount Details</a>
 								</li>
 
 								<li>
@@ -192,20 +176,6 @@
 								</li>
 
 								<li>
-									<a class="primary-color dropdown-item" href="dashboard.html">Orders</a>
-								</li>
-								<li>
-									<a class="primary-color dropdown-item" href="dashboard.html">Tickets</a>
-								</li>
-								<li>
-									<a class="primary-color dropdown-item" href="dashboard.html">Acount Details</a>
-								</li>
-
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-
-								<li>
 									<a class="primary-color dropdown-item" href="#">Log Out</a>
 								</li>
 							</ul>
@@ -213,7 +183,7 @@
 					</li>
 
 					<!-- login -->
-					<li class="ham-items d-none">
+					<li class="ham-items">
 						<a class="login ham-link btn bg-color-primary secondary-color rounded-5" id="login"
 							href="login.html">Login</a>
 					</li>
@@ -227,7 +197,7 @@
 						<a class="ham-link" href="blog.html">Blog</a>
 					</li>
 					<li class="ham-items">
-						<a class="ham-link" href="#">About-Us</a>
+						<a class="ham-link" href="">About-Us</a>
 					</li>
 					<li class="ham-items">
 						<a class="ham-link" href="contact-us.html">Contact-Us</a>
@@ -496,7 +466,9 @@
 							</p>
 						</div>
 					</div>
+
 					<div class="d-none col-lg-2 d-lg-block col-xl-3"></div>
+
 					<div class="col-12 col-lg-8 col-xl-6">
 						<div class="bg bg-color-secondary rounded-5 p-5 my-5">
 							<div class="row mb-3">
@@ -509,30 +481,23 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-floating mb-3">
-												<input type="text" class="form-control rounded-5 border-trans-primary"
-													id="floatingInput" placeholder="Your Name" />
+                                                    <input type="text" class="form-control rounded-5 border-trans-primary" id="floatingInput" placeholder="Your Name" name="name" />
 												<label for="floatingInput">Your name</label>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-floating mb-3">
-												<input type="text" class="form-control rounded-5 border-trans-primary"
-													id="floatingInput" placeholder="Subject" />
+                                                    <input type="text" class="form-control rounded-5 border-trans-primary" id="floatingInput" placeholder="Subject" name="subject"/>
 												<label for="floatingInput">Subject</label>
 											</div>
 										</div>
 									</div>
 									<div class="form-floating mb-3">
-										<input type="email" class="form-control rounded-5 border-trans-primary"
-											id="floatingInput" placeholder="name@example.com" />
+                                            <input type="email" class="form-control rounded-5 border-trans-primary" id="floatingInput" placeholder="name@example.com" name="email"/>
 										<label for="floatingInput">Email address</label>
 									</div>
-									<div class="form-floating mb-3">
-										<textarea class="form-control rounded-3 border-trans-primary"
-											placeholder="Leave your ticket massage here" id="floatingTextarea2" style="
-													height: 180px;
-													resize: none;
-												"></textarea>
+                                        <div class="form-floating">
+                                            <textarea class="form-control rounded-5 border-trans-primary" placeholder="Leave your ticket massage here" name="message" id="floatingTextarea2" style="height: 180px; resize: none;"></textarea>
 										<label for="floatingTextarea2">Write your question here</label>
 									</div>
 									<div class="btn mb-3 w-100 p-0">
@@ -549,116 +514,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- certificate -->
-		<section class="certificate my-5 d-flex justify-content-center">
-			<div class="container">
-				<div class="row my-5">
-					<h3 class="primary-color fw-bold fs-2 text-center">
-						Certificate
-					</h3>
-				</div>
-				<div class="row mx-auto my-auto justify-content-center">
-					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner" role="listbox">
-
-							<div class="carousel-item active">
-								<div class="d-flex p-3 justify-content-between">
-									<div class="custom-card">
-										<div class="blue-part rounded-4">
-											<img class="w-100 h-100" src="../img/profile4.jpg" alt="">
-										</div>
-										<div class="card-body mt-3">
-											<div class="container">
-												<h5 class="fw-bold primary-color text-center">Certificate 1</h5>
-												<p>Lorem ipsum ghxb ipsum Lorem</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="custom-card">
-										<div class="blue-part rounded-4">
-											<img class="w-100 h-100" src="../img/profile1.jpg" alt="">
-										</div>
-										<div class="card-body mt-3">
-											<div class="container">
-												<h5 class="fw-bold primary-color text-center">Certificate 1</h5>
-												<p>Lorem ipsum ghxb ipsum Lorem</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="custom-card">
-										<div class="blue-part rounded-4">
-											<img class="w-100 h-100" src="../img/profile3.jpg" alt="">
-										</div>
-										<div class="card-body mt-3">
-											<div class="container">
-												<h5 class="fw-bold primary-color text-center">Certificate 1</h5>
-												<p>Lorem ipsum ghxb ipsum Lorem</p>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-							<div class="carousel-item">
-								<div class="d-flex p-3 justify-content-between">
-
-									<div class="custom-card">
-										<div class="blue-part rounded-4">
-											<img class="w-100 h-100" src="../img/profile5.jpg" alt="">
-										</div>
-										<div class="card-body mt-3">
-											<div class="container">
-												<h5 class="fw-bold primary-color text-center">Certificate 1</h5>
-												<p>Lorem ipsum ghxb ipsum Lorem</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="custom-card">
-										<div class="blue-part rounded-4">
-											<img class="w-100 h-100" src="../img/profile6.jpg" alt="">
-										</div>
-										<div class="card-body mt-3">
-											<div class="container">
-												<h5 class="fw-bold primary-color text-center">Certificate 1</h5>
-												<p>Lorem ipsum ghxb ipsum Lorem</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="custom-card">
-										<div class="blue-part rounded-4">
-											<img class="w-100 h-100" src="../img/profile7.jpg" alt="">
-										</div>
-										<div class="card-body mt-3">
-											<div class="container">
-												<h5 class="fw-bold primary-color text-center">Certificate 1</h5>
-												<p>Lorem ipsum ghxb ipsum Lorem</p>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<button class="carousel-control-prev bg-da" type="button"
-							data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon bg-color-primary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon bg-color-primary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		<!-- blog -->
 		<section class="blog my-5 bg-color-secondary align-content-center">
 			<div class="container">
@@ -674,7 +530,7 @@
 								<div class="text-center bg-color-secondary border-0 py-3 mx-3 mb-4">
 									<a href="" class="text-decoration-none">
 										<div class="d-flex align-items-center justify-content-center xl-justify-content-start py-0">
-											<img class="blog-img shadow" src="../img/profile1.jpg" alt="" />
+											<img class="blog-img shadow zoom" src="../img/profile1.jpg" alt="" />
 											<div class="ps-4">
 												<p class="fw-bold fs-3 my-4 primary-color">
 													Lorem ipsum
@@ -694,7 +550,7 @@
 								<div class="text-center bg-color-secondary border-0 py-3 mx-3">
 									<a href="" class="text-decoration-none">
 										<div class="d-flex align-items-center justify-content-center xl-justify-content-start py-0">
-											<img class="blog-img shadow" src="../img/profile3.jpg" alt="" />
+											<img class="blog-img shadow zoom" src="../img/profile3.jpg" alt="" />
 											<div class="ps-4">
 												<p class="fw-bold fs-3 my-4 primary-color">
 													Lorem ipsum
@@ -716,7 +572,7 @@
 								<div class="text-center bg-color-secondary border-0 py-3 mx-3 mb-4">
 									<a href="" class="text-decoration-none">
 										<div class="d-flex align-items-center justify-content-center xl-justify-content-end py-0">
-											<img class="blog-img shadow" src="../img/profile4.jpg" alt="" />
+											<img class="blog-img shadow zoom" src="../img/profile4.jpg" alt="" />
 											<div class="ps-4">
 												<p class="fw-bold fs-3 my-4 primary-color">
 													Lorem ipsum
@@ -736,7 +592,7 @@
 								<div class="text-center bg-color-secondary border-0 py-3 mx-3">
 									<a href="" class="text-decoration-none">
 										<div class="d-flex align-items-center justify-content-center xl-justify-content-end py-0">
-											<img class="blog-img shadow" src="../img/profile5.jpg" alt=""/>
+											<img class="blog-img shadow zoom" src="../img/profile5.jpg" alt=""/>
 											<div class="ps-4">
 												<p class="fw-bold fs-3 my-4 primary-color">
 													Lorem ipsum
@@ -765,15 +621,17 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row mt-5 d-flex justify-content-center">
-				<div class="input-group subscribe-section my-5 w-50 p-0 rounded-5">
-					<input type="email"
-						class="rounded-start-5 border-secondary bg-color-secondary primary-color fw-bold shadow form-control subscribe-input px-4"
-						placeholder="Enter Your Email Address" />
-					<button
-						class="btn shadow border-secondary bg-color-primary secondary-color fw-bold rounded-end-5 subscribe-btn">
-						Subscribe
-					</button>
-				</div>
+				<form class="d-flex justify-content-center" action="" method="post">
+					<div class="input-group subscribe-section my-5 w-50 p-0 rounded-5">
+							<input name="email" type="email"
+							class="rounded-start-5 border-secondary bg-color-secondary primary-color fw-bold shadow form-control subscribe-input px-4"
+							placeholder="Enter Your Email Address" />
+						<button
+							class="btn shadow border-secondary bg-color-primary secondary-color fw-bold rounded-end-5 subscribe-btn">
+							Subscribe
+						</button>
+					</div>
+			    </form>
 
 
 				<div class="row">
@@ -900,21 +758,6 @@
 										</defs>
 									</svg>
 								</a>
-								<!-- <a class="notion" href="#">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_11_591)">
-											<path
-												d="M4.45901 4.208C5.20501 4.814 5.48501 4.768 6.88701 4.674L20.102 3.881C20.382 3.881 20.149 3.601 20.056 3.555L17.86 1.968C17.44 1.642 16.879 1.268 15.805 1.361L3.01001 2.295C2.54401 2.341 2.45001 2.575 2.63601 2.761L4.45901 4.208ZM5.25201 7.288V21.192C5.25201 21.939 5.62501 22.219 6.46601 22.172L20.989 21.332C21.83 21.286 21.924 20.772 21.924 20.165V6.354C21.924 5.748 21.691 5.421 21.176 5.467L5.99901 6.354C5.43901 6.401 5.25201 6.681 5.25201 7.287V7.288ZM19.589 8.033C19.682 8.453 19.589 8.873 19.169 8.921L18.469 9.061V19.325C17.861 19.652 17.301 19.839 16.834 19.839C16.086 19.839 15.899 19.605 15.339 18.906L10.762 11.72V18.672L12.21 19C12.21 19 12.21 19.84 11.042 19.84L7.82001 20.026C7.72701 19.84 7.82001 19.373 8.14701 19.28L8.98701 19.047V9.854L7.82201 9.76C7.72801 9.34 7.96201 8.734 8.61501 8.687L12.071 8.454L16.835 15.733V9.293L15.62 9.154C15.527 8.64 15.9 8.267 16.367 8.221L19.589 8.033ZM1.93601 1.035L15.246 0.0549961C16.88 -0.0850039 17.301 0.0079961 18.328 0.754996L22.577 3.741C23.277 4.254 23.511 4.394 23.511 4.954V21.332C23.511 22.358 23.138 22.966 21.831 23.058L6.37301 23.992C5.39301 24.039 4.92501 23.899 4.41101 23.245L1.28201 19.185C0.722014 18.438 0.489014 17.879 0.489014 17.225V2.667C0.489014 1.828 0.863014 1.127 1.93601 1.035Z"
-												fill="white" />
-										</g>
-										<defs>
-											<clipPath id="clip0_11_591">
-												<rect width="24" height="24" fill="white" />
-											</clipPath>
-										</defs>
-									</svg>
-								</a> -->
 							</div>
 						</div>
 					</div>
