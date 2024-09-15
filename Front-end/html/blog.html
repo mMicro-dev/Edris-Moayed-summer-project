@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../css/blog.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <script src="../js/bootstrap.bundle.min.js"></script>
-	<title>InnoWater-EM</title>
+	<title>InnoWater-2.1</title>
 </head>
 
 <body>
@@ -20,6 +20,7 @@
 			<div class="container">
 
 				<a class="navbar-brand zoom secondary-color" href="home.html">InnoWater</a>
+
                 <!-- links -->
 				<ul class="navbar-nav nav-links secondary-color mx-lg-auto mb-2 mb-lg-0 justify-content-around text-nowrap"
 					style="width: 35vw">
@@ -36,6 +37,7 @@
 						<a class="nav-link" href="contact-us.html">Contact-Us</a>
 					</li>
 				</ul>
+
                 <!-- icons -->
 				<ul class="navbar-nav mb-0 justify-content-between align-items-center">
 					<!-- search -->
@@ -80,11 +82,9 @@
 						</div>
 					</li>
 
-					
-
 					<!-- login -->
 					<li class="nav-item">
-						<a class="login btn bg-color-secondary primary-color rounded-5 d-none" id="login"
+						<a class="login btn bg-color-secondary primary-color rounded-5" id="login"
 							href="login.html">Login</a>
 					</li>
 
@@ -124,8 +124,6 @@
 									<hr class="dropdown-divider" />
 								</li>
 
-								
-
 								<li>
 									<a class="primary-color dropdown-item" href="#">Log Out</a>
 								</li>
@@ -133,7 +131,7 @@
 						</div>
 					</li>
 				</ul>
-                <!-- hamberger -->
+
 				<div class="hamberger">
 					<i class="fa fa-bars secondary-color" id="att" aria-hidden="true" onclick="OpenHam()"></i>
 				</div>
@@ -175,8 +173,6 @@
 									<hr class="dropdown-divider" />
 								</li>
 
-								
-
 								<li>
 									<a class="primary-color dropdown-item" href="#">Log Out</a>
 								</li>
@@ -185,18 +181,17 @@
 					</li>
 
 					<!-- login -->
-					<li class="ham-items d-none">
+					<li class="ham-items">
 						<a class="login ham-link btn bg-color-secondary primary-color rounded-5" id="login"
 							href="login.html">Login</a>
 					</li>
 
 					<!-- page links -->
 					<li class="ham-items">
-						<a class="ham-link fw-bold fst-italic active" aria-current="page" href="home.html">Home</a>
+						<a class="ham-link" aria-current="page" href="home.html">Home</a>
 					</li>
-					
 					<li class="ham-items">
-						<a class="ham-link" href="blog.html">Blog</a>
+						<a class="ham-link fw-bold fst-italic active" href="blog.html">Blog</a>
 					</li>
 					<li class="ham-items">
 						<a class="ham-link" href="#">About-Us</a>
@@ -224,8 +219,6 @@
 								</svg>
 						</button>
 					</li>
-
-					
 				</ul>
 			</div>
 		</div>
@@ -253,53 +246,80 @@
 		</div>
 
 	</header>
-    <!-- main -->
+    
     <main>
         <section class="container mt-5">
 
-            <div class="first-view">
-                <div class="row mb-5">
-                    <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
-                        <h1 class="fw-bold">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</h1>
-                        <p class="lead">Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
-                        <a href="" class="btn rounded-5 bg-color-primary secondary-color ms-auto w-25">Read more</a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="blog-page.html">
-                            <img src="../img/Rectangle1.png" alt="">
-                        </a>
-                    </div>
-                </div>
+            <div class="top-section">
+                <div class="first-view">
+					<div class="row mb-5">
+						<div class="col-6 col-lg-8 d-flex flex-column justify-content-center pe-5">
+							<h1 class="selected-title fw-bold">Potential of Air Humidity</h1>
+							<p class="selected-intro ellipsis-intro lead">The global water crisis is one of the most pressing challenges of our time. With increasing population growth, industrialization, and climate change, the demand for fresh water is outstripping supply. According to the United Nations, nearly 2 billion people live in water-stressed areas, and this number is expected to rise. Innovative solutions are urgently needed to address this crisis.</p>
+							<a href="" class="btn rounded-5 bg-color-primary secondary-color text-nowrap ms-auto">Read more</a>
+						</div>
+						<div class="col-6 col-lg-4">
+							<a href="blog-page.html">
+								<img class="selected-blog w-100 rounded-3" src="../img/blog-img/earth-water-liquid.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
         
-                <h5 class="fw-bold mb-3 text-center">Most popular</h5>
+                <h5 class="fw-bold text-center mt-7 mb-3">Most popular</h5>
         
-                <div class="row">
-                    <div class="col-md-8 d-flex flex-column justify-content-center">
-                        <a href="blog-page.html">
-                            <img src="../img/Rectangle2.png" alt="">
-                        </a>
-                        <h1 class="fw-bold mx-3">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</h1>
-                        <p class="mx-3">Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="blog-page.html">
-                            <img src="../img/Rectangle3.png" alt="">
-                        </a>
-                        <p class="mx-3">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
-                        <a href="blog-page.html">
-                            <img src="../img/Rectangle3.png" alt="">
-                        </a>
-                        <p class="mx-3">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
-                    </div>
-                </div>
+                <div class="second-view">
+					<div class="row d-flex justify-content-between">
+						<div class="first-popular col-12 mb-4 mb-md-0 col-md-8 d-flex flex-column justify-content-between">
+							<a class="" href="blog-page.html">
+								<img class="first-pop-img" src="../img/blog-img/photo13341796436.jpg" alt="">
+							</a>
+							<div class="content mt-3 mx-3">
+								<h2 class="fw-bold">Effects of Dehydration</h2>
+								<p class="ellipsis-intro lead mb-0">Water is an essential component of life, playing a crucial role in maintaining the health and functionality of the human body. It is involved in nearly every biological process, from cellular function to temperature regulation. Despite its importance, many people do not consume adequate amounts of water, leading to dehydration, which can have serious health consequences.</p>
+							</div>
+						</div>
+
+						<div class="other-popular col-12 col-md-4  d-flex flex-column justify-content-between">
+							<div class="row first-other mb-2">
+								<a href="blog-page.html">
+									<img class="other-pop-img" src="../img/blog-img/photo13341796397.jpg" alt="">
+								</a>
+								<div class="content mt-2 mx-3">
+									<h5 class="fw-bold mb-0">Water Importance in Farming</h5>
+									<p class="pop-intro mb-0">
+										Agriculture is the largest consumer of freshwater resources globally, accounting for approximately 70% of all freshwater withdrawals1. Water is indispensable for crop production, as it supports the growth of plants by facilitating the uptake of nutrients from the soil. It also helps in maintaining soil structure and preventing soil erosion.
+									</p>	
+								</div>
+							</div>
+
+							<div class="row">
+								<a href="blog-page.html">
+									<img class="other-pop-img" src="../img/blog-img/photo13341796306.jpg" alt="">
+								</a>
+								<div class="content mt-2 mx-3">
+									<h5 class="fw-bold mb-0">Innovative Membrane Technology</h5>
+									<p class="pop-intro mb-0">
+										Water scarcity is a pressing global issue, with billions of people lacking access to clean drinking water. Traditional water purification methods, such as reverse osmosis and distillation, are effective but often energy-intensive and costly. In recent years, nanophotonic membranes have emerged as a promising solution, offering a high-efficiency, low-energy alternative for water purification. This article explores the principles, benefits, and potential applications of nanophotonic membranes in water purification.
+									</p>	
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
         
                 <div class="row mt-5">
+                    <div class="col-12 border-bottom border-primary">
+                    </div>
+                </div>
+				<div class="row mt-5">
                     <div class="col-12">
-                        
                     </div>
                 </div>
             </div>
-            <!-- blogs -->
+        
+
             <div class="blogs">
                 <div class="row mt-5">
                     <div class="col-md-4">
@@ -434,6 +454,7 @@
             </div>
         </section>
     </main>
+	
 	<!-- footer full -->
 	<footer class="footer">
 		<div class="container">
@@ -609,6 +630,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<!-- primary nav script -->
     <script>
 		const navElp = document.querySelector(".navbar");
