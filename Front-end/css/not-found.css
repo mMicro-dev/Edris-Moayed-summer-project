@@ -15,3 +15,52 @@
     font-size: 200px;
     font-family: "Peyda-regular" !important;
 }
+
+
+
+
+@media screen and (max-width:2560px){
+}
+@media screen and (max-width:1440px){
+}
+@media screen and (max-width:1366px){
+    .fzf{
+        font-weight: 900;
+        font-size: 180px;
+        font-family: "Peyda-regular" !important;
+    }
+}
+@media screen and (max-width:1024px){
+}
+@media screen and (max-width:991px){
+    .bg-back-photo{
+        background: url("../img/not-found-mobile.jpg") no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-position: center !important;
+        background-size: cover;
+    }
+    .fzf{
+        font-weight: 900;
+        font-size: 200px;
+        font-family: "Peyda-regular" !important;
+    }
+}
+@media screen and (max-width:576px){
+}
+
+
+
+
+/* @media screen and (max-width:2560px){
+}
+@media screen and (max-width:1440px){
+}
+@media screen and (max-width:1366px){
+}
+@media screen and (max-width:1024px){
+}
+@media screen and (max-width:992px){
+}
+@media screen and (max-width:576px){
+} */
