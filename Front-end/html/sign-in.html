@@ -7,14 +7,14 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/material.css" />
 	<link rel="stylesheet" href="../css/additional-styles.css" />
-	<link rel="stylesheet" href="../css/change-password.css" />
+	<link rel="stylesheet" href="../css/login.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<script src="../js/bootstrap.bundle.min.js"></script>
 	<title>InnoWater-EM</title>
 </head>
 
 <body>
-	<!-- secondary color header -->
+    <!-- secondary color header -->
 	<header>
 		<nav class="navbar navbar-expand-md fixed-top mt-5 mx-5 mw-75 rounded-5 shadow">
 			<div class="container">
@@ -268,44 +268,97 @@
 				</div>
 			</div>
 			<div class="container">
-				<section class="change-password">
+				<section id="login">
 					<div class="row justify-content-center">
 						<div class="col-8">
 							<div class="p-5">
-								<a href="login.html" class="back-btn">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_2497_25890)">
-									<path d="M5 12H19" stroke="#010c8e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									<path d="M12 5L5 12L12 19" stroke="#010c8e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</g>
-									<defs>
-									<clipPath id="clip0_2497_25890">
-									<rect width="24" height="24" fill="white"/>
-									</clipPath>
-									</defs>
-									</svg>
-								</a>
-								<h2 class="fs-1 fw-normal primary-color text-center mb-5">
-									Change your password
+								<h2 class="fs-1 fw-normal text-center mb-5">
+									User sign in
 								</h2>
 								<form action="#!">
 									<div class="row gy-2">
 										<div class="col-12">
 											<div class="form-floating mb-3">
-												<input type="password" class="form-control rounded-5 px-4 input-styles" name="en-password" id="en-password" placeholder="en-password" required />
-												<label for="en-password" class="form-label ms-3 primary-50-color ">Enter password</label>
+												<input type="email" class="form-control rounded-5 px-4 input-styles"
+													name="email" id="email" placeholder="name@example.com" required />
+												<label for="email" id="login-lables" class="form-label ms-3 primary-50-color">Email ID</label>
 											</div>
 										</div>
 										<div class="col-12">
 											<div class="form-floating mb-3">
-												<input type="password" class="form-control rounded-5 px-4 input-styles" name="ren-password" id="ren-password" value="" placeholder="ren-password" required />
-												<label for="password" class="form-label ms-3 primary-50-color">Enter password again</label>
+												<input type="password" class="form-control rounded-5 px-4 input-styles"
+													name="password" id="password" value="" placeholder="Password"
+													required />
+												<label for="password" id="login-lables"  class="pb-4 form-label ms-3 primary-50-color">Password</label>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="d-flex align-items-center gap-2 justify-content-between px-4">
+												<div class="form-check">
+													<input class="form-check-input me-2 input-styles" type="checkbox"
+														value="" name="rememberMe" id="rememberMe" />
+													<label class="form-check-label text-nowrap" for="rememberMe">
+														Remember Me
+													</label>
+												</div>
+												<a data-bs-toggle="modal" data-bs-target="#forget-page"
+													class="btn text-nowrap text-decoration-none primary-color">Forgot
+													password?</a>
+												<!-- Modal -->
+												<div class="modal fade" id="forget-page" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+													<div class="modal-dialog modal-dialog-centered">
+														<div class="modal-content">
+															<div class="modal-header d-flex justify-content-center">
+																<button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+																<h1 class="modal-title mx-auto fs-5 ft" id="staticBackdropLabel">Forget Password</h1>
+															</div>
+															<div class="modal-body">
+																<form action="#!">
+																	<div class="row mx-5 my-3 gy-2">
+																		<div class="col-12">
+																			<div class="form-floating mb-3">
+																				<input type="email" class="form-control rounded-5 px-4 input-styles" name="email" id="email"
+																					placeholder="name@example.com" required />
+																				<label for="email" class="form-label ms-3 primary-50-color">Email ID</label>
+																			</div>
+																		</div>
+																		<div class="col-12 captcha">
+																				<div class="form-floating mb-3">
+																					<input type="text" class="form-control rounded-5 px-4 input-styles" name="captcha"
+																						id="captcha" value="" placeholder="captcha" required />
+																					<label for="captcha" class="form-label ms-3 primary-50-color">Captcha</label>
+																				</div>
+																		</div>
+																		<div class="col-12">
+																			<div class="d-grid my-3">
+																				<button class="btn bg-color-primary secondary-color rounded-5 btn-lg" type="submit">
+																					Submit
+																				</button>
+																			</div>
+																		</div>
+																		<div class="col-12">
+																			<p class="m-0 text-center">
+																				Don't have an account?
+																				<a href="#!" class="text-decoration-none primary-50-color">click here</a>
+																			</p>
+																		</div>
+																	</div>
+																</form>
+															</div>
+															<!-- <div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																<button type="button" class="btn btn-primary">Understood</button>
+															</div> -->
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 										<div class="col-12">
 											<div class="d-grid my-3">
-												<button class="btn bg-color-primary secondary-color rounded-5 btn-lg" type="submit">
-													Change Password
+												<button class="btn bg-color-primary secondary-color rounded-5 btn-lg"
+													type="submit">
+													Log in
 												</button>
 											</div>
 										</div>
@@ -313,6 +366,67 @@
 											<p class="m-0 text-center">
 												Don't have an account?
 												<a href="#!" class="text-decoration-none primary-50-color">click here</a>
+											</p>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="container d-none">
+				<section class="forget-password">
+					<div class="row justify-content-center">
+						<div class="col-8">
+							<div class="p-5">
+								<a href="login.html" class="back-btn"><svg width="24" height="24"
+										viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2497_25890)">
+											<path d="M5 12H19" stroke="#010c8e" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path d="M12 5L5 12L12 19" stroke="#010c8e" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+										<defs>
+											<clipPath id="clip0_2497_25890">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg></a>
+								<h2 class="fs-1 fw-normal text-center mb-5">
+									Forget Password
+								</h2>
+								<form action="#!">
+									<div class="row gy-2">
+										<div class="col-12">
+											<div class="form-floating mb-3">
+												<input type="email" class="form-control rounded-5 px-4 input-styles"
+													name="email" id="email" placeholder="name@example.com" required />
+												<label for="email" class="form-label ms-3 primary-50-color">Email
+													ID</label>
+											</div>
+										</div>
+										<div class="col-12 captcha">
+											<!-- <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control rounded-5 px-4 input-styles" name="captcha"
+                                                        id="captcha" value="" placeholder="captcha" required />
+                                                    <label for="captcha" class="form-label ms-3 primary-50-color">Captcha</label>
+                                                </div> -->
+										</div>
+										<div class="col-12">
+											<div class="d-grid my-3">
+												<button class="btn bg-color-primary secondary-color rounded-5 btn-lg"
+													type="submit">
+													Submit
+												</button>
+											</div>
+										</div>
+										<div class="col-12">
+											<p class="m-0 text-center">
+												Don't have an account?
+												<a href="#!" class="text-decoration-none primary-50-color">click
+													here</a>
 											</p>
 										</div>
 									</div>
