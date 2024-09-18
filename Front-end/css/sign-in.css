@@ -44,6 +44,12 @@ main {
     line-height: 1.25;
 }
 
+.input-name{
+    font-weight: bolder;
+    margin-left: 2rem;
+    margin-bottom: 1rem ;
+}
+
 /* query */
 @media screen and (max-width: 1370px) {
     #login h2 {
