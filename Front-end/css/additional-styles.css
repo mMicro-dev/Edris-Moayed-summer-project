@@ -413,6 +413,10 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 @media screen and (max-width: 576px) {
+    html {
+        font-size: 0.55rem !important;
+    }
+
     .navbar-brand {
         margin-left: 2rem;
     }
