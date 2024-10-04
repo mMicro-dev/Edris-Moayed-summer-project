@@ -1,0 +1,161 @@
+/* main */
+
+.top-section {
+    padding-top: 10rem;
+}
+
+.selected-intro+a {
+    margin-right: 3rem;
+}
+.ellipsis-intro {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden ;
+    text-overflow: ellipsis;
+}
+.pop-intro {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.selected {
+    max-width: 443px;
+    max-height: 443px;
+    width: 100%;
+    height: 443px;
+    background-size: cover;
+    background-position: center; 
+}
+
+.first-popular-img {
+    height: 233px;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.first-popular-bg {
+    width: 100%; /* عرض کامل */
+    height: 250px; /* ارتفاع پیش‌فرض */
+    background-size: cover; /* پوشاندن کامل */
+    background-position: center; /* مرکز قرار دادن تصویر */
+}
+
+.second-popular-bg {
+    width: 100%; /* عرض کامل */
+    height: 150px; /* ارتفاع پیش‌فرض */
+    background-size: cover; /* پوشاندن کامل */
+    background-position: center; /* مرکز قرار دادن تصویر */
+}
+.third-popular-bg {
+    width: 100%; /* عرض کامل */
+    height: 150px; /* ارتفاع پیش‌فرض */
+    background-size: cover; /* پوشاندن کامل */
+    background-position: center; /* مرکز قرار دادن تصویر */
+}
+
+.placeholder-box {
+    background-color: #00008B;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-bg {
+    width: 100%; /* عرض کامل */
+    height: 300px; /* ارتفاع پیش‌فرض */
+    background-size: cover; /* پوشاندن کامل */
+    background-position: center; /* مرکز قرار دادن تصویر */
+}
+
+.btn:hover {
+    background-color: var(--primary-50) !important;
+}
+
+.view-counted {
+    font-size: 1rem;
+    top: 0%;
+    left: 0%;
+}
+
+.page-link {
+    color: var(--primary) !important;
+}
+
+.active>.page-link,
+.page-link.active {
+    color: var(--secondary) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    .selected-blog {
+        height: 300px;
+    }
+    .selected-title{
+        font-size: 1.6rem;
+    }
+    .selected-intro+a{
+        margin-right: 0;
+    }
+    .view-counted {
+        font-size: 0.75rem;
+        top: 0%;
+        left: 0%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .first-other {
+        margin-bottom: 2rem !important;
+    }
+    .view-counted {
+        font-size: 1rem;
+        top: 0%;
+        left: 0%;
+    }
+    .selected {
+        height: 300px; /* ارتفاع برای دستگاه‌های کوچکتر */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .view-counted {
+        font-size: 1.5rem !important;
+    }
+    .selected {
+        height: 200px; /* ارتفاع برای دستگاه‌های خیلی کوچک */
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    
+    .second-view {
+        height: 430px;
+    }
+    .other-popular {
+        max-width: 447px;
+        max-height: 141px;
+    }
+
+}
+@media screen and (min-width:992px) {
+    .first-view {
+        height: 443px;
+    }.first-popular {
+        max-width: 790px;
+        max-height: 429px;
+    }
+    .other-popular {
+        max-width: 447px;
+        max-height: 429px;
+    }
+}
